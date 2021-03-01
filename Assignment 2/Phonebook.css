@@ -1,0 +1,41 @@
+ h1 {
+     font-size: 60px;
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: #FFF;
+     box-sizing: border-box;
+     border: 10px solid black;
+     background-color: rgb(8, 138, 110);
+     margin-left: 300px;
+     margin-right: 300px;
+
+ }
+
+ div {
+     background-color: #9aa899;
+     border: 1px solid black;
+     margin: 10px;
+     font-size: 1.5rem;
+     ;
+     top: 10px;
+     size: 5px;
+
+ }
+
+ dt {
+     box-sizing: border-box;
+
+     margin-left: 300px;
+     margin-right: 300px;
+     background: rgb(8, 138, 110);
+
+ }
+
+ dl {
+     background: #B8C1C8;
+     color: #FFF;
+     font-size: 150px;
+     text-align: center;
+     position: sticky;
+     top: 1px;
+ }
