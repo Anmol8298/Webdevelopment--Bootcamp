@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="JQuery.js"></script>
+    <style>
+        body{
+            background-image: url("background.jpg");
+            
+
+  background-size: cover;
+        }
+        h1{
+            /* color: rgb(33, 18, 100);
+            font-size: 36px;
+            line-height: 40px;
+            
+           
+            text-shadow: 2px 2px 4px #000000; */
+            margin: 1em 0 0.5em 0;
+	color:coral;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 80px;
+	line-height: 42px;
+	text-transform: uppercase;
+    text-align: center;
+	text-shadow: 0 2px rgb(129, 9, 15), 0 3px #777;
+        }
+        #container{
+            width:80vw;
+            /* border:2px solid #ccc; */
+            margin:40px auto;
+            padding: 40px 30px;
+        }
+        #search{
+            width: 20vw;
+            margin: auto;
+        }
+        input{
+            padding: 0;
+        }
+        ul{
+            color: white;
+            margin: 50px auto;
+            text-align: center;
+        }
+        ul li:nth-child(1){
+            font-weight: bolder;
+            font-size: 50px;
+        }
+        ul li:nth-child(2){
+            font-weight: bold;
+            font-size: 30px;
+        }
+        ul li:nth-child(3){
+            font-size: 120px;
+            /* text-shadow: 2rem black; */
+            text-shadow: 2px 2px 4px #000000;
+        }
+        ul li:nth-child(4){
+            font-size: 50px;
+            font-style: italic;
+           
+            
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1><u>Know Weather Report</u></h1>
+    <div id="container">
+        <div id="search" class="input-group input-group-lg">
+            <input placeholder="Enter City" id="city" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+          </div>
+        <ul id="Weather" style="list-style-type: none;">
+            
+        </ul>
+    </div>
+
+<script src="app.js"></script>    
+</body>
+</html>
