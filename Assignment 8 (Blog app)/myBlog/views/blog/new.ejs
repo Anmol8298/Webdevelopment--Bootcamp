@@ -1,0 +1,35 @@
+<%- include("../partials/header") %>
+<%- include("../partials/navbar") %>  
+
+    <div class="container mt-5">
+      <%- include("../partials/flash") %> 
+
+        <form class="needs-validation" action="/blog" method="POST" novalidate>
+            <div class="mb-3">
+              <label for="Title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" name="post[title]" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="Description" class="form-label">Description</label>
+              <input type="text" class="form-control" id="description" name="post[description]" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="Image Url" class="form-label">Image Url</label>
+              <input type="text" class="form-control" id="image" name="post[image]" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+    </div>
+
+
+<%- include("../partials/footer") %>  

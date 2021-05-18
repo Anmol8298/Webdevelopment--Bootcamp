@@ -1,0 +1,23 @@
+<%- include("../partials/header") %> 
+<%- include("../partials/navbar") %> 
+<!-- Blog Posts -->
+<div class="container blogpost">
+  <%- include("../partials/flash") %> 
+
+  <% for(let post of blogposts) {%>
+      <div class="card mb-5 mt-5">
+        <img src="<%= post.image %> " class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= post.title %> </h5>
+          <p class="card-text"><%= post.description %> </p>
+          <a href="/blog/<%= post._id %> " class="btn btn-primary">More Info</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div> 
+  <% } %>     
+</div>
+
+          
+
+
+<%-include("../partials/footer") %> 

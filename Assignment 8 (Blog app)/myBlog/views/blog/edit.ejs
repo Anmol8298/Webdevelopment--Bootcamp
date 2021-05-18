@@ -1,0 +1,26 @@
+<%- include("../partials/header") %>
+<%- include("../partials/navbar") %>  
+
+    <div class="container mt-5">
+      <%- include("../partials/flash") %> 
+
+        <form action="/blog/<%= post._id %>?_method=PATCH" method="POST">
+            <div class="mb-3">
+              <label for="Title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" value=<%= post.title %> name="post[title]">
+            </div>
+            <div class="mb-3">
+              <label for="Description" class="form-label">Description</label>
+              <input type="text" class="form-control" id="description" value=<%= post.description %> name="post[description]">
+            </div>
+            <div class="mb-3">
+              <label for="Image Url" class="form-label">Image Url</label>
+              <input type="text" class="form-control" id="image" value=<%= post.image %> name="post[image]">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+    </div>
+
+
+<%- include("../partials/footer") %>  
